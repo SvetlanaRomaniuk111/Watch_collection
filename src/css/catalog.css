@@ -1,5 +1,82 @@
+:root {
+  --main-text-color: #141414;
+  /* колір для заголовків */
+  --head-text-color: #1e2827;
+  --light-text-color: #ffffff;
+  --subscription-text-color: rgba(20, 20, 20, 0.5);
+  --btn-active-bcgnd-color: #1e2827;
+  --dark-bcgnd-color: #141414;
+}
 /**-------------------- CATALOG -------------------------*/
 
+.catalog {
+}
+.conteiner {
+  max-width: 375px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  outline: 1px solid red;
+}
+.catalog-title {
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--btn-active-bcgnd-color);
+}
+
+.catalog-list {
+}
+.list {
+}
+.catalog-item {
+}
+.catalog-link {
+}
+.link {
+}
+.catalog-link-img-wrapper {
+  margin: 30px 43px;
+}
+.catalog-foto {
+}
+.product-name {
+  margin-bottom: 4px;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--dark-bcgnd-color);
+}
+.product-price {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: -0.02em;
+  color: rgba(20, 20, 20, 0.5);
+}
+.catalog-btn {
+}
+.button {
+}
+.catalog-btn {
+  display: block;
+  position: absolute;
+  right: 0;
+
+  font-style: normal;
+  font-size: 12px;
+  line-height: 1.17;
+  text-align: center;
+  text-transform: uppercase;
+  color: var(--light-text-color);
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-start;
+  padding: 18px 35px;
+  background: var(--btn-active-bcgnd-color);
+  border-radius: 8px;
+}
 @media screen and (min-width: 768px) {
 }
 
