@@ -46,7 +46,7 @@
 }
 
 
-.menu.is-open {
+.is-open {
   transform: translateX(0%);
 }
 .menu-btn {
