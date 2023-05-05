@@ -1,5 +1,6 @@
 .footer {
   background-color: var(--head-text-color);
+  height: auto;
   padding-top: 40px;
   padding-bottom: 20px;
   margin: 0 auto;
@@ -18,7 +19,6 @@
   fill: var(--light-text-color);
 }
 .contacts-information {
-  display: block;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
@@ -45,14 +45,12 @@
   text-transform: uppercase;
   color: var(--light-text-color);
 }
-.navigation-menu-item:not(:last-child) {
-  margin-bottom: 14px;
-}
 .footer-social {
   margin-bottom: 80px;
 }
 .social-menu {
   display: flex;
+  flex-direction: row;
   gap: 14px;
 }
 .social-menu-item {
@@ -81,6 +79,7 @@
 }
 .service-information-menu {
   display: flex;
+  flex-direction: row;
   gap: 14px;
 }
 .service-information-item {
@@ -127,9 +126,6 @@
     font-size: 18px;
     line-height: 1.33;
   }
-  .navigation-menu-item:not(:last-child) {
-    margin-bottom: 18px;
-  }
   .footer-social {
     margin-bottom: 0px;
   }
@@ -151,6 +147,7 @@
   .service-information {
     display: flex;
     justify-content: space-between;
+    margin-top: 152px;
   }
   .service-information-item {
     font-size: 14px;
@@ -159,8 +156,13 @@
 }
 @media screen and (min-width: 1280px) {
   .footer {
-    padding-top: 104px;
-    padding-bottom: 32px;
+    padding: 104px 0px 32px;
+  }
+  .footer-max-information {
+    justify-content: space-between;
+  }
+  .footer-general-container {
+    margin: 0 auto;
   }
   .footer-contacts {
     margin-right: 349px;
