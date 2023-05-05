@@ -20,6 +20,7 @@
   width: 14px;
   height: 14px;
   fill: var(--light-text-color);
+  /* stroke: var(--subscription-text-color); */
 }
 .header-btn {
   background-color: transparent;
@@ -147,7 +148,11 @@
 
     text-align: center;
     text-transform: uppercase;
+    border :1px solid transparent;
   }
+  .address-link:hover, .address-link:focus{
+  border: 1px solid #FFFFFF;
+}
   .header-btn {
     display: none;
   }
