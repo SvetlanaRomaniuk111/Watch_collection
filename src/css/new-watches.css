@@ -1,0 +1,28 @@
+.watches {
+  padding-bottom: 80px;
+}
+.watches-title {
+  margin-bottom: 8px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.06em;
+  color: rgba(20, 20, 20, 0.4);
+}
+.watches-subtitle {
+  margin-bottom: 40px;
+  font-size: 32px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: var(--dark-bcgnd-color);
+}
+.watches-list {
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.watches-item {
+}
+
