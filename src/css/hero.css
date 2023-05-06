@@ -169,7 +169,7 @@
   }
   .hero-img {
     position: absolute;
-    right: 0;
+    right: 12px;
     bottom: 80px;
   }
 }
