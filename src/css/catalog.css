@@ -6,16 +6,35 @@
   --subscription-text-color: rgba(20, 20, 20, 0.5);
   --btn-active-bcgnd-color: #1e2827;
   --dark-bcgnd-color: #141414;
+  --typical-transitions: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /**-------------------- CATALOG -------------------------*/
+@media screen and (max-width: 374px) {
+  .catalog-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px 32px;
+  }
 
+  .catalog-link-img-wrapper {
+    max-width: 335px;
+    max-height: 360px;
+  }
+
+  .catalog-foto {
+    max-width: 276px;
+    width: 100%;
+    gap: 30px 43px;
+  }
+}
+/**----------WIDTH 375--------------*/
 .catalog {
 }
 .conteiner {
   max-width: 375px;
-  min-width: 320px;
+  width: 100%;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 0 20px;
   outline: 1px solid red;
 }
 .catalog-title {
@@ -28,20 +47,44 @@
 }
 
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 32px;
 }
-.list {
-}
+
 .catalog-item {
 }
 .catalog-link {
 }
-.link {
-}
 .catalog-link-img-wrapper {
-  margin: 30px 43px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 335px;
+  height: 360px;
+  margin-bottom: 14px;
 }
-.catalog-foto {
+
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  padding: 40px 32px;
+  /* overflow: auto; */
+  transform: translate(0, 100%);
+  transition: transform var(--typical-transitions);
+  color: var(--second-bgr-color);
+  background-color: var(--pressed-state-color);
 }
+
 .product-name {
   margin-bottom: 4px;
   font-size: 14px;
@@ -78,9 +121,52 @@
   border-radius: 8px;
 }
 @media screen and (min-width: 768px) {
+  .catalog .conteiner {
+    max-width: 704px;
+    margin: 0 auto;
+    padding: 0 32px;
+    outline: 1px solid red;
+  }
+  .catalog-title {
+    font-size: 40px;
+    line-height: 1.1;
+  }
+
+  .catalog-list {
+  }
+
+  .catalog-foto {
+    min-width: 276px;
+    height: 274px;
+  }
+  .catalog-item {
+    width: calc((100% - 32px) / 2);
+  }
 }
 
 @media screen and (min-width: 1280px) {
+  .catalog .conteiner {
+    max-width: 1176px;
+    margin: 0 auto;
+    padding: 0 12px;
+    outline: 1px solid red;
+  }
+  .catalog-title {
+    margin-bottom: 64px;
+  }
+  .catalog-link-img-wrapper {
+    width: 276px;
+    height: 325px;
+  }
+  .catalog-list {
+    display: flex;
+    gap: 64px 24px;
+  }
+  .catalog-foto {
+  }
+  .catalog-item {
+    width: calc((100% - 72px) / 4);
+  }
 }
 
 /**-------------------- MODAL -------------------------*/
