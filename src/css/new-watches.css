@@ -19,7 +19,7 @@
   color: var(--dark-bcgnd-color);
 }
 
-.list {
+.watches-list {
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -30,7 +30,7 @@
     padding-bottom: 128px;
   }
 
-  .list {
+  .watches-list {
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -61,7 +61,7 @@
     margin-bottom: 80px;
   }
 
-  .list {
+  .watches-list {
     gap: 20px;
   }
 }
