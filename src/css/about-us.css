@@ -20,7 +20,8 @@
     font-size: 32px;
     line-height: 1.25;
     letter-spacing: -0.02em;
-    color: #1E2827;
+    color: var(--head-text-color, #1E2827);
+    /* color: #1E2827; */
     margin-bottom: 40px;
 }
 
@@ -34,6 +35,7 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
+    color: var(--dark-bcgnd-color, #141414);
     color: #141414;
 }
 
