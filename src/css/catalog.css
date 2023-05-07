@@ -257,8 +257,8 @@
 }
 
 .modal-close-btn {
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border: none;
   background-color: transparent;
   display: block;
@@ -270,7 +270,7 @@
     background var(--typical-transitions), border var(--typical-transitions);
 }
 .close-btn-icon {
-  fill: currentColor;
+  stroke: currentColor;
 }
 
 .modal-img-wrapper {
