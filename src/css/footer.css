@@ -108,7 +108,7 @@
     gap: 142px;
   }
   .footer-min-information {
-    gap: 142px;
+    gap: 136px;
   }
   .footer-logo {
     width: 50px;
@@ -131,7 +131,7 @@
     line-height: 1.33;
   }
   .footer-social {
-    margin: 0px auto;
+    margin-bottom: 0px;
   }
   .social-menu {
     gap: 16px;
