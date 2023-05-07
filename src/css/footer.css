@@ -72,6 +72,10 @@
   fill: var(--light-text-color);
   opacity: 0.8;
 }
+.social-menu-link {
+  line-height: 0;
+  
+}
 .footer-copywrite {
   font-weight: 400;
   font-size: 12px;

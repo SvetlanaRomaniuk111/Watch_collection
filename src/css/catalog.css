@@ -408,6 +408,7 @@
     flex-wrap: nowrap;
     gap: 20px;
     padding: 40px;
+    overflow: auto;
   }
 
   .modal-img-wrapper {
