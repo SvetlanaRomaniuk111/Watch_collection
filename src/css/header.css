@@ -121,6 +121,7 @@
   .nav-list {
     display: flex;
     gap: 40px;
+    align-items: flex-end;
   }
   .nav-link {
     position: relative;
