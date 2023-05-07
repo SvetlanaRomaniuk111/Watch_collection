@@ -23,6 +23,7 @@
   color: var(--light-text-color);
   margin-bottom: 20px;
   font-style: normal;
+  display: block;
 }
 .contacts-coordinates {
   display: block;
@@ -34,6 +35,11 @@
   color: var(--light-text-color);
   margin-bottom: 40px;
   font-style: normal;
+}
+.navigation-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 .navigation-menu-item {
   font-weight: 400;
