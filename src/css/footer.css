@@ -12,8 +12,6 @@
 .footer-logo {
   display: block;
   margin-bottom: 40px;
-}
-.footer-logo-icon {
   width: 40px;
   height: 40px;
   fill: var(--light-text-color);
@@ -105,7 +103,7 @@
   .footer-contacts {
     margin-right: 142px;
   }
-  .footer-logo-icon {
+  .footer-logo {
     width: 50px;
     height: 50px;
   }
@@ -127,7 +125,7 @@
     line-height: 1.33;
   }
   .footer-social {
-    margin-bottom: 0px;
+    margin: 0px auto;
   }
   .social-menu {
     gap: 16px;
