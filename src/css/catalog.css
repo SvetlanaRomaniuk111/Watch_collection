@@ -1,11 +1,11 @@
 :root {
-  --main-text-color: #141414;
+  /* --main-text-color: #141414; */
   /* колір для заголовків */
-  --head-text-color: #1e2827;
+  /* --head-text-color: #1e2827;
   --light-text-color: #ffffff;
   --subscription-text-color: rgba(20, 20, 20, 0.5);
   --btn-active-bcgnd-color: #1e2827;
-  --dark-bcgnd-color: #141414;
+  --dark-bcgnd-color: #141414; */
   --typical-transitions: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /**-------------------- CATALOG -------------------------*/
@@ -14,6 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 40px 32px;
+    margin-bottom: 40px;
   }
 
   .catalog-link-img-wrapper {
@@ -24,7 +25,6 @@
   .catalog-foto {
     max-width: 276px;
     width: 100%;
-    gap: 30px 43px;
   }
 }
 
@@ -64,15 +64,14 @@
 .catalog-item :is(:hover, :focus) .overlay {
   transform: translate(0, 0);
 }
-.catalog-link {
-}
+
 .catalog-link-img-wrapper {
   position: relative;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 100%;
   height: 360px;
   margin-bottom: 14px;
 }
@@ -82,6 +81,7 @@
 }
 
 .overlay-list-title {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -89,6 +89,7 @@
   color: #ffffff;
 }
 .overlay-description {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.01em;
@@ -97,27 +98,28 @@
 
 .overlay {
   position: absolute;
+  text-align: left;
   left: 0;
   top: 0;
   width: 100%;
   height: 100%;
   padding: 20px;
-  /* overflow: auto; */
   transform: translate(0, 100%);
   transition: transform var(--typical-transitions);
-  color: var(--second-bgr-color);
-  background-color: #1e2827;
+  background-color: var(--head-text-color);
   border-radius: 8px;
 }
 
 .product-name {
   margin-bottom: 4px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--dark-bcgnd-color);
 }
 .product-price {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
@@ -131,6 +133,7 @@
   display: block;
   right: 0;
   font-style: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   text-align: center;
@@ -187,6 +190,10 @@
   .catalog {
     padding-bottom: 0;
   }
+  .catalog-foto {
+    margin-right: 0;
+    margin-left: 0;
+  }
 
   .catalog-title {
     margin-bottom: 64px;
@@ -230,6 +237,8 @@
 }
 
 .modal {
+  display: flex;
+  flex-wrap: wrap;
   max-width: 335px;
   width: 100%;
   min-height: 584px;
@@ -265,14 +274,15 @@
 
 .modal-img-wrapper {
   padding-left: 9.5px;
-  padding-right: 9.5p;
+  padding-right: 9.5px;
   margin-bottom: 40px;
 }
 
 .modal-foto {
   display: flex;
   flex-wrap: wrap;
-  margin: 26px 9.5px 40px;
+  margin-top: 26px;
+  margin-bottom: 40px;
 }
 .modal-title {
   font-weight: 500;
@@ -294,6 +304,7 @@
 
 .input-text {
   display: block;
+  font-weight: 400;
   margin-bottom: 12px;
   font-size: 12px;
   line-height: 1.17;
@@ -307,6 +318,7 @@
 }
 
 .modal-input {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -315,7 +327,6 @@
   border: 1px solid rgba(20, 20, 20, 0.5);
   border-radius: 8px;
   outline: transparent;
-
   padding-left: 16px;
   color: rgba(20, 20, 20, 0.5);
 }
@@ -337,6 +348,7 @@
 }
 
 .modal-textarea {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.02em;
@@ -364,6 +376,7 @@
   display: block;
   right: 0;
   font-style: normal;
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   text-align: center;
@@ -378,12 +391,56 @@
   margin-bottom: 12px;
 }
 
-.modal-form-btn:is(:hover, :focus) {
-  background-color: var(--pressed-state-color);
-}
 .modal-agree {
+  font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: -0.02em;
   color: rgba(20, 20, 20, 0.4);
+}
+@media screen and (min-width: 768px) {
+  .modal {
+    max-width: 744px;
+    width: 100%;
+    min-height: 670px;
+    flex-wrap: nowrap;
+    gap: 20px;
+    padding: 40px;
+  }
+
+  .modal-img-wrapper {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .input-text {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  .modal-form-btn {
+    max-width: 100%;
+    width: 368px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .modal {
+    max-width: 904px;
+    width: 100%;
+    min-height: 694px;
+    gap: 40px;
+  }
+
+  .modal-comment {
+    margin-bottom: 40px;
+  }
+
+  .modal-field {
+    margin-bottom: 24px;
+  }
+
+  .modal-form-btn {
+    max-width: 100%;
+    width: 508px;
+  }
 }
