@@ -105,7 +105,7 @@
     }
 
     .about-title {
-        margin-right: 110px;
+        margin-right: 90px;
     }
 
     .about-top-text {
@@ -117,9 +117,9 @@
         width: 380px;
     }
 
-    .about-flex {
+    /* .about-flex {
         margin-left: 80px;
-    }
+    } */
 
     .about-img {
         width: 892px;
