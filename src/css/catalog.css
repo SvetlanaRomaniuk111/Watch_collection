@@ -1,11 +1,4 @@
 :root {
-  /* --main-text-color: #141414; */
-  /* колір для заголовків */
-  /* --head-text-color: #1e2827;
-  --light-text-color: #ffffff;
-  --subscription-text-color: rgba(20, 20, 20, 0.5);
-  --btn-active-bcgnd-color: #1e2827;
-  --dark-bcgnd-color: #141414; */
   --typical-transitions: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /**-------------------- CATALOG -------------------------*/
@@ -29,7 +22,8 @@
 
 /**---------- WIDTH 375 + --------------*/
 .catalog {
-  padding-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 .conteiner {
   max-width: 375px;
@@ -153,7 +147,8 @@
   }
 
   .catalog {
-    padding-bottom: 128px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .catalog-title {
@@ -201,13 +196,14 @@
 
 @media screen and (min-width: 1280px) {
   .catalog .conteiner {
-    max-width: 1176px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 12px;
   }
 
   .catalog {
-    padding-bottom: 0;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
   .catalog-foto {
     margin-right: 0;
@@ -225,13 +221,11 @@
   .catalog-list {
     display: flex;
     gap: 64px 24px;
+    margin-bottom: 80px;
   }
 
   .catalog-item {
     width: calc((100% - 72px) / 4);
-  }
-  .catalog-btn {
-    margin-bottom: 80px;
   }
 }
 
@@ -452,12 +446,8 @@
   .modal {
     max-width: 904px;
     width: 100%;
-/* <<<<<<< catalog-heart
-    height: 694px; */
-/* ======= */
-    height: 90%;    
+    height: 90%;
     max-height: 694px;
-/* >>>>>>> main */
     gap: 40px;
   }
 
@@ -474,4 +464,3 @@
     width: 508px;
   }
 }
-
