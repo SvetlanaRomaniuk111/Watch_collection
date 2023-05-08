@@ -1,5 +1,6 @@
 .watches {
-  padding-bottom: 80px;
+  padding-bottom: 40px;
+  padding-top: 40px;
 }
 
 .watches-title {
@@ -27,7 +28,8 @@
 
 @media screen and (min-width: 768px) {
   .watches {
-    padding-bottom: 128px;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 
   .watches-list {

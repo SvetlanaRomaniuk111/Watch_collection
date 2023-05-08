@@ -1,13 +1,13 @@
 .header {
   background-color: var(--main-text-color);
   color: var(--light-text-color);
+   padding-top: 29px;
+   padding-bottom: 20px;
 }
 .header-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 29px;
-  padding-bottom: 20px;
 }
 .header-logo {
   width: 14px;
@@ -108,8 +108,9 @@
   fill: var(--light-text-color);
 }
 @media screen and (min-width: 768px) {
-  .header-wrap {
-    padding: 20px 32px;
+  .header{
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
   .header-logo {
     width: 19px;

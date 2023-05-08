@@ -1,12 +1,12 @@
 /* Hero */
 .hero {
   background-color: #141414;
+  padding-top: 49px;
+  padding-bottom: 40px;
 }
 
 .container-hero {
-  margin: 0 auto;
-  padding-top: 60px;
-  padding-bottom: 40px;
+  margin: 0 auto;  
   padding-left: 20px;
   padding-right: 20px;
   max-width: 375px;
@@ -100,15 +100,19 @@
 }
 
 @media screen and (max-width: 338px) {
+  
   .hero-title {
     font-weight: 500;
   }
 }
 
 @media screen and (min-width: 768px) {
-  .container-hero {
-    max-width: 768px;
+  .hero {
+    padding-top: 60px;
     padding-bottom: 64px;
+  }
+  .container-hero {
+    max-width: 768px;    
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -147,15 +151,18 @@
 }
 
 @media screen and (min-width: 1280px) {
+  .hero {
+   padding-bottom: 80px; 
+  }
   .container-hero {
     position: relative;
-    max-width: 1176px;
-    padding-bottom: 80px;
+    max-width: 1200px;
     padding-left: 12px;
     padding-right: 12px;
   }
   .swiper-container {
     position: static;
+    margin-bottom: 0;
   }
   .hero-title {
     margin-bottom: 122px;
@@ -163,13 +170,13 @@
   }
   .hero-text {
     width: 282px;
-    top: 60px;
+    top: 0;
     right: 12px;
     transform: translateY(0);
   }
   .hero-img {
     position: absolute;
     right: 12px;
-    bottom: 80px;
+    bottom: 0;
   }
 }
