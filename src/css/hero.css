@@ -52,6 +52,7 @@
   stroke: rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .swiper-btn-logo {
