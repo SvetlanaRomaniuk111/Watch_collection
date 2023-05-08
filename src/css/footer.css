@@ -74,7 +74,6 @@
 }
 .social-menu-link {
   line-height: 0;
-  
 }
 .footer-copywrite {
   font-weight: 400;
@@ -106,12 +105,10 @@
   }
   .footer-max-information {
     display: flex;
+    gap: 142px;
   }
   .footer-min-information {
-    display: flex;
-  }
-  .footer-contacts {
-    margin-right: 142px;
+    gap: 142px;
   }
   .footer-logo {
     width: 50px;
@@ -127,8 +124,7 @@
     line-height: 1.33;
   }
   .footer-navigation {
-    width: 86px;
-    margin-right: 142px;
+    margin-right: 0px;
   }
   .navigation-menu-item {
     font-size: 18px;
@@ -167,20 +163,16 @@
     padding: 104px 0px 32px;
   }
   .footer-max-information {
-    justify-content: space-between;
+    gap: 367px;
+  }
+  .footer-min-information {
+    gap: 355px;
   }
   .footer-general-container {
     margin: 0 auto;
   }
-  .footer-contacts {
-    margin-right: 349px;
-  }
   .footer-logo-icon {
     width: 50px;
     height: 50px;
-  }
-  .footer-navigation {
-    width: 115px;
-    margin-right: 367px;
   }
 }
