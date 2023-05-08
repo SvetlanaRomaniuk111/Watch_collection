@@ -102,7 +102,7 @@
   align-items: flex-end;
   gap: 4px;
 }
-.menu-logosvg {
+.menu-logo-image {
   width: 14px;
   height: 14px;
   fill: var(--light-text-color);
