@@ -138,6 +138,11 @@
   background: var(--btn-active-bcgnd-color);
   border-radius: 8px;
 }
+@media screen and (max-width: 767px), (min-width: 1200px) {
+  .catalog-link-icon {
+    display: none;
+  }
+}
 
 /**---------- WIDTH 768 + --------------*/
 
@@ -154,6 +159,22 @@
   .catalog-title {
     font-size: 40px;
     line-height: 1.1;
+  }
+  .catalog-link {
+    position: relative;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    .catalog-link-icon {
+      fill: transparent;
+      stroke: rgba(20, 20, 20, 0.1);
+      right: 14px;
+      top: 14px;
+      position: absolute;
+    }
+    .close-link-icon {
+      stroke: currentColor;
+    }
   }
 
   .catalog-list {
@@ -431,8 +452,12 @@
   .modal {
     max-width: 904px;
     width: 100%;
+/* <<<<<<< catalog-heart
+    height: 694px; */
+/* ======= */
     height: 90%;    
     max-height: 694px;
+/* >>>>>>> main */
     gap: 40px;
   }
 
