@@ -21,9 +21,12 @@
   font-size: 14px;
   line-height: 1.29;
   color: var(--light-text-color);
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   font-style: normal;
   display: block;
+}
+.contacts-menu-item:not(:last-child) {
+  margin-bottom: 20px;
 }
 .contacts-coordinates {
   display: block;
@@ -33,7 +36,6 @@
   line-height: 1.29;
   letter-spacing: -0.02em;
   color: var(--light-text-color);
-  margin-bottom: 40px;
   font-style: normal;
 }
 .navigation-menu {
@@ -50,6 +52,7 @@
   color: var(--light-text-color);
 }
 .footer-social {
+  margin-top: 40px;
   margin-bottom: 80px;
 }
 .social-menu {
@@ -132,6 +135,7 @@
   }
   .footer-social {
     margin-bottom: 0px;
+    margin-top: 0px;
   }
   .social-menu {
     gap: 16px;
@@ -147,6 +151,7 @@
   .footer-copywrite {
     font-size: 14px;
     line-height: 1.29;
+    margin-bottom: 0px;
   }
   .service-information {
     display: flex;
@@ -161,9 +166,6 @@
 @media screen and (min-width: 1280px) {
   .footer {
     padding: 104px 0px 32px;
-  }
-  .footer-max-information {
-    gap: 367px;
   }
   .footer-min-information {
     gap: 355px;
